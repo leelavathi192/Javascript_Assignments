@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2 assignment</title>
+</head>
+<body>
+    <h1>Day2 Assignments</h1>
+    <p><b>1) program to find perticular character in a string</b></p>
+    <p>getting character at index 1<br>The given string is <b>hello world</b></p>
+    <script type="text/javascript">
+
+    var str="hello world"
+    var res= str.charAt(1)
+    document.write(res);
+
+    </script>
+
+    <p><b>2) program to convert minutes to seconds</b></p>
+    <script type="text/javascript">
+    function conmintosec(minutes)
+    {
+        return Math.floor(minutes*60);
+    }
+    var min=2;
+    var mintosec=conmintosec(min);
+    document.write("the given minutes is "+min+" and the result is "+mintosec);
+    
+     </script>
+
+     <p><b>3) program to find an element in array of strings</b></p>
+     <script type="text/javascript">
+     var array=["aaa","bbb","ccc","ddd","eee"];
+     document.write("the array elements are "+array);
+     document.write("<br />");
+     document.write("element to be search is ccc");
+     document.write("<br />");
+     function search(namekey,array)
+     {
+         for(let i=0;i<array.length;i++)
+         {
+             if(array[i]==namekey)
+             {
+                document.write("element found "+array[i]);
+             }
+         }
+            
+     }
+    var resultobject=search("ccc",array);
+    
+    </script>
+    <p><b>4) program to display only elements containing 'a' in them from a array</b></p>
+    <script type="text/javascript">
+    var arrayvalues=["roshan","sudesh","deepu","leela","mini","max"];
+    var texttofind='a';
+    var matches=arrayvalues.filter(function(value){
+        if(value){
+            return value.indexOf(texttofind)>=0;
+        }
+    });
+    document.write("the array elements are " +arrayvalues);
+    document.write("<br />");
+    document.write("elements which contain character 'a' are    "+matches);
+    </script>
+
+<p><b>5) program to print an array in reverse order</b></p>
+<script type="text/javascript">
+var arr=[0,1,2,3,4,5,6,7,8,9,10];
+document.write("array before reversing "+arr);
+var revarr=arr.reverse();
+document.write("<br />");
+document.write("array after reversing "+revarr);
+
+</script>
+    
+</body>
+</html>
