@@ -1,2 +1,2 @@
 # Javascript_Assignments
-we are learning Javascript from letsupgrade
+This repository contains the details of what i have learnt in javascript class from letupgrade.
