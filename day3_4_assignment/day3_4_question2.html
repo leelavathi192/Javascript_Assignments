@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 2</title>
+        <h1>copying content of one field into another field</h1>
+    </head>
+<body>
+
+<b>Field1:</b> <input type="text" id="field1" ><br><br>
+<b>Field2:</b> <input type="text" id="field2"><br><br>
+
+<button onclick="myFunction()">Copy text</button>
+
+
+
+<script>
+function myFunction() {
+  document.getElementById("field2").value = document.getElementById("field1").value;
+  
+}
+</script>
+
+</body>
+</html>
