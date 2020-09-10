@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Question 4</title>
+        <h1>to display all the objects on console who's age is <30 and country is india</h1>
+    </head>
+    <body>
+        <p><b>array of objects are printed at console</b></p>
+        <script type="text/javascript">
+        let array=[
+            {
+                name:"abcd",
+                age:15,
+                country:"india",
+                hobbies:["reading","singing","playing"]
+            },
+            {
+                name:"efgh",
+                age:25,
+                country:"africa",
+                hobbies:["reading","singing","playing"]
+            },
+            {
+                name:"ijkl",
+                age:45,
+                country:"us",
+                hobbies:["reading","singing","playing"]
+            },
+            {
+                name:"mnop",
+                age:65,
+                country:"america",
+                hobbies:["reading","singing","playing"]
+            },
+
+             
+            ];
+            console.log("all the array objects")
+            console.log("")
+            for(let i=0;i<array.length;i++){
+                console.log(array[i]);
+            }
+            console.log("")
+            console.log("array objects who's age<30 and country india")
+            console.log("")
+            
+            for(let i=0;i<array.length;i++){
+                if((array[i].age<30)&&(array[i].country=="india"))
+                    console.log(array[i]);
+        
+            }
+              
+        </script>
+    </body>
+</html>
